@@ -27,8 +27,7 @@ obj1.first(1, 2, 3);
  */
 export const obj1 = {
     first(...args) {
-        console.log(typeof args);
-        this.second(...Array.from(args).reverse());
+        this.second(...args.reverse());
     },
     second() {
         // здесь ничего писать не нужно
